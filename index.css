@@ -190,14 +190,15 @@
 }
 
 .slideinmenu {
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    z-index: 20000;
-    width: 100%;
+    z-index: 2000;
+    width: 50%;
     height: 100%;
-    visibility: visible;
+    background-color: tomato;
+    display: none;
 }
 
 .container-rss {
