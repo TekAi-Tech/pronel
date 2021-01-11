@@ -1,11 +1,25 @@
 function showmenu() {
     document.getElementById('mainmenu').style.display = "inline";
+    document.getElementById('hmrest').style.display = "inline";
     anime({
         targets: '.slideinmenu',
         left: '50%',
         easing: 'easeOutBack',
 
     });
+}
+
+function hidemenu() {
+    anime({
+        targets: '.slideinmenu',
+        left: '100%',
+        easing: 'easeOutBack',
+
+    });
+    setTimeout(function() {
+        document.getElementById("mainmenu").style.display = "none";
+        document.getElementById("hmrest").style.display = "none";
+    }, 500);
 }
 
 function SpotifyUI() {
