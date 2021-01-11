@@ -218,8 +218,8 @@
     top: 10%;
     background-color: #022733;
     color: white;
-    font-family: Anuratiout;
-    height: 60%;
+    font-family: goldmanbold;
+    height: 75%;
     width: 66.7%;
 }
 
@@ -339,7 +339,7 @@ a {
 .inforow {
     color: white;
     left: 0;
-    height: 35%;
+    height: 25%;
     width: 104%;
     position: absolute;
     bottom: 0;

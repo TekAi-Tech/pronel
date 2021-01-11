@@ -9,7 +9,7 @@ let parser = new Parser();
 
     feed.items.forEach(item => {
         if (haha <= 5) {
-            document.getElementById('rss').innerHTML += '<li id="rssfeed"><a href=' + item.link + '>' + item.title + '</a></li>'
+            document.getElementById('rss').innerHTML += '<li id="rssfeed">' + item.title + '</li>'
             console.log(item.link);
             haha = haha + 1;
         }
@@ -29,8 +29,8 @@ function rssreload() {
         console.log(feed.title);
 
         feed.items.forEach(item => {
-            if (haha <= 5) {
-                document.getElementById('rss').innerHTML += '<li id="rssfeed"><a href=' + item.link + '>' + item.title + '</a></li>'
+            if (haha <= 4) {
+                document.getElementById('rss').innerHTML += '<li id="rssfeed">' + item.title + '</li>'
                 console.log(item.link);
                 haha = haha + 1;
             }
