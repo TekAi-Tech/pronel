@@ -114,8 +114,8 @@
     border-left-color: #13A965;
 }
 
-.btnmenu:hover::after,
-.btnmenu:hover::before {
+.btnmenu:focus::after,
+.btnmenu:focus::before {
     width: 100%;
     height: 100%;
     animation: fade 3s forwards;
@@ -167,8 +167,8 @@
     border-left-color: #13A965;
 }
 
-.btnmenusec:hover::after,
-.btnmenusec:hover::before {
+.btnmenusec:focus::after,
+.btnmenusec:focus::before {
     width: 100%;
     height: 100%;
     animation: fade 3s forwards;

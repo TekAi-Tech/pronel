@@ -24,33 +24,49 @@ function hidemenu() {
 
 function SpotifyUI() {
     anime({
-        targets: '.HomePronel',
-        bottom: '100%', // -> from '28px' to '100%',
-        easing: 'easeInOutQuad',
-
-    });
-    document.getElementById("tomenubtn").style.visibility = "visible";
-    anime({
-        targets: '.tomenubtn',
-        opacity: 1,
+        targets: '.slideinmenu',
+        left: '100%',
         easing: 'easeOutBack',
-    });
-    document.getElementById("hiddingmenu").style.display = "none";
-    document.getElementById("hmrest").style.display = "none";
-    document.getElementById("HomePronel").style.display = "none";
-    anime({
-        targets: '.container-menu',
-        bottom: '100%', // -> from '28px' to '100%',
-        easing: 'easeInOutQuad',
+        duration: 1000,
 
     });
-    document.getElementById("spotifyui").style.visibility = "visible";
+    //  document.getElementById("HomePronel").style.display = "none";
+    // document.getElementById("bottomline").style.display = "none";
     anime({
-        targets: '.spotifycon',
-        width: '100%', // -> from '28px' to '100%',
+        targets: '.rowday',
+        translateY: 500,
         easing: 'easeOutBack',
+        duration: 2000,
 
     });
+    anime({
+        targets: '.secondrowcas',
+        translateY: 500,
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.container-rss',
+        left: '100%',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.inforow',
+        bottom: '100%',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    setTimeout(function() {
+        document.getElementById("mainmenu").style.display = "none";
+        document.getElementById("hmrest").style.display = "none";
+        document.getElementById("firstrowden").style.display = "none";
+        document.getElementById("rowcas").style.display = "none";
+        document.getElementById("bottomline").style.display = "none";
+    }, 1500);
 }
 
 function HomePronel() {

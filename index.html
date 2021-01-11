@@ -32,16 +32,18 @@
 
     <div id="HomePronel" class="HomePronel">
         <!--first row day/dropdown btn start-->
-        <div class="row den">
-            <div class="col-1 lock">
-                <button onclick="ShowLockMenu()" class="fa fa-lock fa-3x lockbtn" aria-hidden="true"></button>
-            </div>
-            <div class="col-7 date">
-                <div id="date"></div>
-            </div>
-            <button onclick="showmenu()" class="col-4 btnmenu"> 
+        <div id="firstrowden" class="rowday">
+            <div id="firstrowden" class="row den">
+                <div class="col-1 lock">
+                    <button onclick="ShowLockMenu()" class="fa fa-lock fa-3x lockbtn" aria-hidden="true"></button>
+                </div>
+                <div class="col-7 date">
+                    <div id="date"></div>
+                </div>
+                <button onclick="showmenu()" class="col-4 btnmenu"> 
                 HOME
         </button>
+            </div>
         </div>
         <!--first row day/dropdown btn end-->
         <!--dropdown start-->
@@ -58,14 +60,16 @@
         </div>
         <!--dropdown end-->
         <!--second row time start-->
-        <div class="row cas">
-            <div class="col-4 clock">
-                <div id="canvas">
-                    <div id="feed-textarea">
-                        <ul></ul>
+        <div id="rowcas" class="secondrowcas">
+            <div class="row cas">
+                <div class="col-4 clock">
+                    <div id="canvas">
+                        <div id="feed-textarea">
+                            <ul></ul>
+                        </div>
                     </div>
+                    <div id="clock"></div>
                 </div>
-                <div id="clock"></div>
             </div>
         </div>
         <!--second row time end-->
@@ -120,7 +124,7 @@
     <!--lock menu end-->
 
     <!--rss inforow start-->
-    <div class="row inforow">
+    <div id="bottomline" class="row inforow">
         <div class="col rsstit">
             <h1>RSS</h1>
         </div>
