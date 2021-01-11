@@ -1,31 +1,3 @@
-function showmenu() {
-    document.getElementById("hiddingmenu").style.display = "inline";
-
-
-    document.getElementById("hmrest").style.display = "inline";
-    anime({
-        targets: '.container-menu',
-        width: '33%', // -> from '28px' to '100%',
-        easing: 'easeOutBack',
-
-    });
-
-}
-
-function hidemenu() {
-    anime({
-        targets: '.container-menu',
-        width: '0%', // -> from '28px' to '100%',
-        easing: 'easeInOutQuad',
-
-    });
-    setTimeout(function() {
-        document.getElementById("hiddingmenu").style.visibility = "hidden";
-        document.getElementById("hmrest").style.visibility = "hidden";
-    }, 1000);
-    console.log("hidemenu");
-}
-
 function SpotifyUI() {
     anime({
         targets: '.HomePronel',

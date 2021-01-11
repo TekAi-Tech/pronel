@@ -185,33 +185,6 @@
     font-size: 5vw;
 }
 
-.container-menu {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2000;
-}
-
-.cont-trans {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 66.5%;
-    background-color: transparent;
-    z-index: 1000;
-    display: none;
-}
-
-.seccon {
-    visibility: hidden;
-    z-index: 1000;
-}
-
 .btns {
     height: 10%;
 }
