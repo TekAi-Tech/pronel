@@ -25,7 +25,7 @@ function hidemenu() {
 function SpotifyUI() {
     anime({
         targets: '.HomePronel',
-        width: '0%', // -> from '28px' to '100%',
+        bottom: '100%', // -> from '28px' to '100%',
         easing: 'easeInOutQuad',
 
     });
@@ -35,12 +35,12 @@ function SpotifyUI() {
         opacity: 1,
         easing: 'easeOutBack',
     });
-    document.getElementById("hiddingmenu").style.visibility = "hidden";
-    document.getElementById("hmrest").style.visibility = "hidden";
-    document.getElementById("HomePronel").style.visibility = "hidden";
+    document.getElementById("hiddingmenu").style.display = "none";
+    document.getElementById("hmrest").style.display = "none";
+    document.getElementById("HomePronel").style.display = "none";
     anime({
         targets: '.container-menu',
-        width: '0%', // -> from '28px' to '100%',
+        bottom: '100%', // -> from '28px' to '100%',
         easing: 'easeInOutQuad',
 
     });

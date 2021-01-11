@@ -197,8 +197,16 @@
     z-index: 2000;
     width: 50%;
     height: 100%;
-    background-color: tomato;
+    background-color: teal;
     display: none;
+}
+
+.mainmenutitle {
+    justify-content: center;
+    text-align: center;
+    font-family: Anuratireg;
+    color: black;
+    font-size: 5vw;
 }
 
 .transmenu {
@@ -411,6 +419,24 @@ a {
     outline: none;
     box-shadow: inset 350 0 0 0 #022733;
     color: black;
+}
+
+.mainmenubtn {
+    justify-content: center;
+    text-align: center;
+    background-color: teal;
+    border: none;
+    font-family: goldmanbold;
+    font-size: 4vw;
+    background-color: teal;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.mainmenubtn:focus {
+    background-color: #022733;
+    color: white;
+    outline: none;
 }
 
 .lockmenubtnthree,
