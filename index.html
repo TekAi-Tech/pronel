@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ProNel Main</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="/pronel/anime-master/lib/anime.min.js"></script>
+    <script src="clock.js"></script>
+    <script src="index.js"></script>
+    <script src="news.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container-fluid" onload="realtimeClock()" id="body">
+    <!--spotify UI start-->
+    <div id="spotifyui" class="spotifycon">
+        <div id="toprowspot" class="row den2">
+            <img onclick="hidemenu2()" class="col-1 img2" src="r.png">
+            <div onclick="hidemenu2()" class="col-7 date2">
+                <div id="date2"></div>
+            </div>
+            <button onclick="showmenusec()" class="col-4 btnmenu2"> 
+                    SPOTIFY
+            </button>
+        </div>
+        <button id="tomenubtn" onclick="showtoprow()" class="tomenubtn">MENU</button>
+    </div>
+
+    <div id="HomePronel" class="HomePronel">
+        <!--first row day/dropdown btn start-->
+        <div class="row den">
+            <div class="col-1 lock">
+                <button onclick="ShowLockMenu()" class="fa fa-lock fa-3x lockbtn" aria-hidden="true"></button>
+            </div>
+            <div class="col-7 date">
+                <div id="date"></div>
+            </div>
+            <button onclick="showmenu()" class="col-4 btnmenu"> 
+                HOME
+        </button>
+        </div>
+        <!--first row day/dropdown btn end-->
+        <!--dropdown start-->
+        <div id="dropdown" class="container-fluid seccon">
+            <div id="hiddingmenu" class="container-menu">
+                <div class="row btns">
+                    <div class="col-12">
+                        <button onclick="HomePronel()" class="btnmenusec">HOME</button>
+                        <button onclick="SpotifyUI()" class="btnmenusec">SPOTIFY</button>
+                    </div>
+                </div>
+            </div>
+            <div onclick="hidemenu()" id="hmrest" class="cont-trans">
+            </div>
+        </div>
+        <!--dropdown end-->
+        <!--second row time start-->
+        <div class="row cas">
+            <div class="col-4 clock">
+                <div id="canvas">
+                    <div id="feed-textarea">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div id="clock"></div>
+            </div>
+        </div>
+        <!--second row time end-->
+        <!--rss start-->
+        <div class="container-rss">
+            <br>
+            <ul id="rss" class="rssinfo"></ul>
+        </div>
+        <!--rss end-->
+        <!--lock menu start-->
+
+        <div id="lockmenucon" class="container-lockmenu">
+            <br>
+            <div class="row firstrowlock">
+                <div class="col lockmenutitle">
+                    <button onclick="HideLockMenu()" class="btninvisible"><h1>PRONEL LOCK MENU</h1></button>
+                </div>
+
+            </div>
+            <br>
+            <div class="row secondrowlock">
+                <div class="col lockmenucolone">
+                    <br>
+                    <button class="lockmenubtnone">ENTER CODE</button>
+
+                </div>
+
+            </div>
+            <div class="row thirdrowlock">
+                <div class="col lockmenucoltwo">
+                    <br>
+                    <button class="lockmenubtntwo">HIDE ProNel</button>
+
+                </div>
+
+            </div>
+            <div class="row forthrowlock">
+                <div class="col lockmenucolthree">
+                    <br>
+                    <button class="lockmenubtnthree">LOCK ProNel</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--lock menu end-->
+
+    <!--rss inforow start-->
+    <div class="row inforow">
+        <div class="col rsstit">
+            <h1>RSS</h1>
+        </div>
+        <div class="col">
+            <button onclick="rssreload()" class="btnmenusec rssreload">RELOAD</button>
+        </div>
+    </div>
+    <!--rss inforow end-->
+
+    </div>
+    </div>
+</body>
+
+</html>

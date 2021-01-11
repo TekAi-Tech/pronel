@@ -1,0 +1,24 @@
+{
+    "name": "pronel",
+    "version": "0.1.0",
+    "description": "Nejlepsi ovladaci panel.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^11.1.0",
+        "electron-packager": "^15.2.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.3",
+        "bower": "^1.8.8",
+        "file-system": "^2.2.2",
+        "git": "^0.1.5",
+        "jquery": "^3.5.1",
+        "rss-parser": "^3.10.0"
+    }
+}

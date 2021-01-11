@@ -1,0 +1,437 @@
+@font-face {
+    font-family: Anuratireg;
+    src: url(fonts/AnuratiPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Anuratiout;
+    src: url(fonts/AnuratiPro-Outline.otf);
+}
+
+@font-face {
+    font-family: goldmanbold;
+    src: url(fonts/Goldman-Bold.ttf);
+}
+
+@font-face {
+    font-family: goldmanreg;
+    src: url(fonts/Goldman-Regular.ttf);
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(2, 39, 51, 1);
+    }
+    to {
+        background-color: rgba(2, 39, 51, 0);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bckg {
+    background-color: blue;
+}
+
+.clock {
+    background-color: #022733;
+}
+
+.date {
+    background-color: #022733;
+}
+
+.cas {
+    height: 10%;
+}
+
+.den {
+    height: 10%;
+}
+
+#clock {
+    width: 75%;
+    top: 5px;
+    position: relative;
+    font-size: 5vw;
+    color: white;
+    font-family: Anuratireg;
+    text-align: center;
+    justify-content: center;
+}
+
+#date {
+    width: 75%;
+    position: relative;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: Anuratireg;
+    z-index: 99;
+}
+
+.btnmenu {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: white;
+    font-family: Anuratireg;
+    background-color: #022733;
+}
+
+.btnmenu::after,
+.btnmenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenu::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenu::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenu:hover::after,
+.btnmenu:hover::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenu:focus {
+    outline: none;
+}
+
+.btnmenusec {
+    position: relative;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: white;
+    font-family: Anuratireg;
+    background-color: #022733;
+}
+
+.btnmenusec::after,
+.btnmenusec::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenusec::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenusec::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenusec:hover::after,
+.btnmenusec:hover::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenusec:focus {
+    outline: none;
+}
+
+.zindex99 {
+    z-index: 99;
+    color: white;
+    justify-content: center;
+    font-size: 5vw;
+}
+
+.container-menu {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 33%;
+    bottom: 0;
+    background-color: #022733;
+    display: inline;
+    z-index: 1002;
+}
+
+.cont-trans {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 66.5%;
+    background-color: transparent;
+    z-index: 1000;
+    display: none;
+}
+
+.seccon {
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.btns {
+    height: 10%;
+}
+
+.container-rss {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-color: #022733;
+    color: white;
+    font-family: Anuratiout;
+    height: 60%;
+    width: 66.7%;
+}
+
+.spotifycon {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    background-color: #022733;
+    color: white;
+    visibility: hidden;
+    z-index: 111;
+}
+
+.tomenubtn {
+    position: relative;
+    border: none;
+    outline: none;
+    left: 50%;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: goldenrod;
+    font-family: Anuratireg;
+    font-size: 15px;
+}
+
+.tomenubtn:focus {
+    outline: none;
+}
+
+.den2 {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    visibility: hidden;
+    opacity: 0.0;
+}
+
+#date2 {
+    width: 75%;
+    position: relative;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: Anuratireg;
+    z-index: 99;
+}
+
+.btnmenu2 {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: white;
+    font-family: Anuratireg;
+    background-color: #022733;
+}
+
+.btnmenu2::after,
+.btnmenu2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenu2::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenu2::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenu2:hover::after,
+.btnmenu2:hover::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenu2:focus {
+    outline: none;
+}
+
+a {
+    color: white;
+    background-color: black;
+}
+
+.HomePronel {
+    position: unset;
+    width: calc(100%-50px);
+    height: 100%;
+}
+
+.inforow {
+    color: white;
+    left: 0;
+    height: 20%;
+    width: 104%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #022733;
+    justify-content: center;
+    text-align: center;
+}
+
+.rsstit {
+    top: 15%;
+}
+
+.rssreload {
+    top: 15%;
+}
+
+.lock {
+    background-color: #022733;
+}
+
+.lockbtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: teal;
+}
+
+.lockbtn:focus {
+    outline: none;
+}
+
+.container-lockmenu {
+    position: absolute;
+    bottom: 100%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: teal;
+    z-index: 1001;
+    display: none;
+}
+
+.firstrowlock {
+    justify-content: center;
+    text-align: center;
+    top: 2%;
+    font-family: Anuratireg;
+    font-size: 5vw;
+}
+
+.btninvisible {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    box-shadow: inset 0 0 0 0 #022733;
+    transition: ease-out 0.3s;
+}
+
+.btninvisible:focus {
+    outline: none;
+    box-shadow: inset 350 0 0 0 #022733;
+    color: black;
+}
+
+.lockmenubtnthree,
+.lockmenubtntwo,
+.lockmenubtnone {
+    background-color: teal;
+    border: none;
+    font-family: goldmanbold;
+    font-size: 4vw;
+    background-color: teal;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.lockmenubtnthree:focus,
+.lockmenubtntwo:focus,
+.lockmenubtnone:focus {
+    background-color: #022733;
+    color: white;
+    outline: none;
+}
