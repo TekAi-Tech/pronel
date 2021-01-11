@@ -23,6 +23,14 @@ function hidemenu() {
 }
 
 function SpotifyUI() {
+    document.getElementById("spotifyui").style.visibility = "visible";
+    anime({
+        targets: '.spotifycon',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
     anime({
         targets: '.slideinmenu',
         left: '100%',
@@ -30,18 +38,16 @@ function SpotifyUI() {
         duration: 1000,
 
     });
-    //  document.getElementById("HomePronel").style.display = "none";
-    // document.getElementById("bottomline").style.display = "none";
     anime({
         targets: '.rowday',
-        translateY: 500,
+        translateY: -150,
         easing: 'easeOutBack',
         duration: 2000,
 
     });
     anime({
         targets: '.secondrowcas',
-        translateY: 500,
+        translateY: -150,
         easing: 'easeOutBack',
         duration: 2000,
 
@@ -55,7 +61,14 @@ function SpotifyUI() {
     });
     anime({
         targets: '.inforow',
-        bottom: '100%',
+        translateY: 300,
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.siderow',
+        translateX: -400,
         easing: 'easeOutBack',
         duration: 2000,
 
@@ -66,6 +79,7 @@ function SpotifyUI() {
         document.getElementById("firstrowden").style.display = "none";
         document.getElementById("rowcas").style.display = "none";
         document.getElementById("bottomline").style.display = "none";
+        document.getElementById("siderow").style.display = "none";
     }, 1500);
 }
 

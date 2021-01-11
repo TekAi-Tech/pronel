@@ -237,7 +237,8 @@
     bottom: 0;
     top: 0;
     height: 100%;
-    width: 0%;
+    width: 100%;
+    opacity: 0;
     position: absolute;
     background-color: #022733;
     color: white;
@@ -457,4 +458,14 @@ a {
     background-color: #022733;
     color: white;
     outline: none;
+}
+
+.siderow {
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 33.3%;
+    height: 50%;
+    background-color: #022733;
+    z-index: 1000;
 }
