@@ -1,3 +1,13 @@
+function showmenu() {
+    document.getElementById('mainmenu').style.display = "inline";
+    anime({
+        targets: '.slideinmenu',
+        left: '50%',
+        easing: 'easeOutBack',
+
+    });
+}
+
 function SpotifyUI() {
     anime({
         targets: '.HomePronel',
