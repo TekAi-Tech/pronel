@@ -240,7 +240,7 @@
     width: 100%;
     opacity: 0;
     position: absolute;
-    background-color: #022733;
+    background-color: green;
     color: white;
     visibility: hidden;
     z-index: 111;

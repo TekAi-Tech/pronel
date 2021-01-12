@@ -24,13 +24,7 @@ function hidemenu() {
 
 function SpotifyUI() {
     document.getElementById("spotifyui").style.visibility = "visible";
-    anime({
-        targets: '.spotifycon',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 1000,
 
-    });
     anime({
         targets: '.slideinmenu',
         left: '100%',
@@ -71,6 +65,13 @@ function SpotifyUI() {
         translateX: -400,
         easing: 'easeOutBack',
         duration: 2000,
+
+    });
+    anime({
+        targets: '.spotifycon',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 3000,
 
     });
     setTimeout(function() {
