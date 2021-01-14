@@ -66,88 +66,179 @@
         <!--dropdown end-->
         <!--calc start-->
         <div id="calcnmbrs" class="calcnmbrs">
+            <div>
+                <button onclick="showmenu()" style="background-color: teal;" class="calchomebtn">HOME</button>
 
-
-        </div>
-        <div id="calcbtns" class="calcbtns">
-            <br>
-            <div class="row">
-                <div class="col">
-                    <button class="calcbtn">AC</button>
-                </div>
 
             </div>
+
         </div>
 
 
+    </div>
+    <div id="calcbtns" class="calcbtns">
+        <br>
+        <div class="row calcfirstrowbtn">
+            <div class="col">
+                <button class="calcbtn">+</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">-</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">x</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">÷</button>
+            </div>
 
-        <!--calc end-->
-        <!--second row time start-->
-        <div id="rowcas" class="secondrowcas">
-            <div class="row cas">
-                <div class="col-4 clock">
-                    <div id="canvas">
-                        <div id="feed-textarea">
-                            <ul></ul>
-                        </div>
+        </div>
+        <!--calc second row-->
+        <br>
+
+        <div class="row calcsecrowbtn">
+            <div class="col">
+                <button class="calcbtn">7</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">8</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">9</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">+</button>
+            </div>
+
+        </div>
+        <!--calc third row-->
+        <br>
+        <br>
+
+        <div class="row calcsecrowbtn">
+            <div class="col">
+                <button class="calcbtn">4</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">5</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">6</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">-</button>
+            </div>
+
+        </div>
+        <!--calc forth row-->
+        <br>
+        <br>
+
+        <div class="row calcsecrowbtn">
+            <div class="col">
+                <button class="calcbtn">1</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">2</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">3</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">/</button>
+            </div>
+
+        </div>
+        <!--calc five row-->
+        <br>
+        <br>
+
+        <div class="row calcsecrowbtn">
+            <div class="col">
+                <button class="calcbtn">0</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">,</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">AC</button>
+            </div>
+            <div class="col">
+                <button class="calcbtn">/</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--calc end-->
+    <!--second row time start-->
+    <div id="rowcas" class="secondrowcas">
+        <div class="row cas">
+            <div class="col-4 clock">
+                <div id="canvas">
+                    <div id="feed-textarea">
+                        <ul></ul>
                     </div>
-                    <div id="clock"></div>
                 </div>
+                <div id="clock"></div>
             </div>
         </div>
-        <!--second row time end-->
-        <!--rss start-->
-        <div class="container-rss">
-            <br>
-            <ul id="rss" class="rssinfo"></ul>
+    </div>
+    <!--second row time end-->
+    <!--rss start-->
+    <div class="container-rss">
+        <br>
+        <ul id="rss" class="rssinfo"></ul>
+    </div>
+    <!--rss end-->
+    <!--siderow start-->
+    <div id="siderow" class="siderow">
+
+    </div>
+    <!--siderow end-->
+    <!--lock menu start-->
+
+    <div id="lockmenucon" class="container-lockmenu">
+        <br>
+        <div class="row firstrowlock">
+            <div class="col lockmenutitle">
+                <button onclick="HideLockMenu()" class="btninvisible"><h1>PRONEL LOCK MENU</h1></button>
+            </div>
+
         </div>
-        <!--rss end-->
-        <!--siderow start-->
-        <div id="siderow" class="siderow">
+        <br>
+        <div class="row secondrowlock">
+            <div class="col lockmenucolone">
+                <br>
+                <button class="lockmenubtnone">ENTER CODE</button>
+
+            </div>
+            <div class="col">
+                <br>
+                <button onclick="HideLockMenu()" class="lockmenubtnone">Go Back</button>
+            </div>
 
         </div>
-        <!--siderow end-->
-        <!--lock menu start-->
-
-        <div id="lockmenucon" class="container-lockmenu">
-            <br>
-            <div class="row firstrowlock">
-                <div class="col lockmenutitle">
-                    <button onclick="HideLockMenu()" class="btninvisible"><h1>PRONEL LOCK MENU</h1></button>
-                </div>
-
-            </div>
-            <br>
-            <div class="row secondrowlock">
-                <div class="col lockmenucolone">
-                    <br>
-                    <button class="lockmenubtnone">ENTER CODE</button>
-
-                </div>
-                <div class="col">
-                    <br>
-                    <button onclick="HideLockMenu()" class="lockmenubtnone">Go Back</button>
-                </div>
-
-            </div>
-            <div class="row thirdrowlock">
-                <div class="col lockmenucoltwo">
-                    <br>
-                    <button class="lockmenubtntwo">HIDE ProNel</button>
-
-                </div>
-
-            </div>
-            <div class="row forthrowlock">
-                <div class="col lockmenucolthree">
-                    <br>
-                    <button class="lockmenubtnthree">LOCK ProNel</button>
-
-                </div>
+        <div class="row thirdrowlock">
+            <div class="col lockmenucoltwo">
+                <br>
+                <button class="lockmenubtntwo">HIDE ProNel</button>
 
             </div>
 
         </div>
+        <div class="row forthrowlock">
+            <div class="col lockmenucolthree">
+                <br>
+                <button class="lockmenubtnthree">LOCK ProNel</button>
+
+            </div>
+
+        </div>
+
+    </div>
     </div>
     <!--lock menu end-->
 
