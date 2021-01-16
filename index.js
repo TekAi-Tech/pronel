@@ -258,3 +258,22 @@ function HideLockMenu() {
     }, 500);
 
 }
+
+function EnterCode() {
+    document.getElementById("lockmenuconentercode").style.display = "inline";
+    anime({
+        targets: '.container-lockmenu',
+        bottom: '100%',
+        easing: 'easeOutBack',
+
+    });
+    anime({
+        targets: '.container-lockmenuentercode',
+        bottom: '10%',
+        easing: 'easeOutBack',
+
+    });
+    setTimeout(function() {
+        document.getElementById("lockmenucon").style.display = "none";
+    }, 1500);
+}

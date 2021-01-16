@@ -489,65 +489,35 @@ a {
     z-index: 1000;
 }
 
-.calcfirstrowbtn {
-    justify-content: center;
-    text-align: center;
-    height: 10%;
-    left: 5%;
-    right: 0;
-    top: 10px;
-}
-
-.calcbtns {
+.container-lockmenuentercode {
     position: absolute;
-    right: 0;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-color: #022733;
-    z-index: 3000;
-}
-
-.calcnmbrs {
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
     bottom: 100%;
-    height: 20%;
-    width: 100%;
-    background-color: teal;
-    z-index: 3000;
-}
-
-.calcbtn {
-    width: 100%;
-    height: 100%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
     border-radius: 15px;
     background-color: teal;
-    font-size: 20px;
-    font-family: goldmanbold;
-    border: solid white 1px;
+    z-index: 1001;
+    display: none;
 }
 
-.calchomebtn {
-    border: none;
+.entercode {
+    justify-content: center;
+    text-align: center;
     font-family: Anuratireg;
-    font-size: 4vw;
-    justify-content: center;
-    text-align: center;
+    color: white;
     position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    width: 100%;
+    height: 10%;
+    top: 1%;
+    left: 0%;
+    right: 0%;
 }
 
-.calcsecrowbtn {
-    justify-content: center;
-    text-align: center;
-    height: 10%;
-    left: 5%;
-    right: 0;
-    top: 20%;
+.inputentercode {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
 }
