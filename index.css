@@ -507,6 +507,7 @@ a {
     text-align: center;
     font-family: Anuratireg;
     color: white;
+    left: 10px;
     position: absolute;
     width: 100%;
     height: 10%;
@@ -517,7 +518,17 @@ a {
 
 .inputentercode {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
+    justify-content: center;
+    text-align: center;
+    left: 15%;
+    width: 70%;
+    height: 80px;
+    top: 35%;
+    border: solid black;
+    font-family: goldmanbold;
+    font-size: 5vw;
+}
+
+.inputentercode:focus {
+    outline: none;
 }

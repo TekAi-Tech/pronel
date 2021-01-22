@@ -259,6 +259,20 @@ function HideLockMenu() {
 
 }
 
+function HideLockMenucode() {
+
+    anime({
+        targets: '.container-lockmenuentercode',
+        bottom: '100%',
+        easing: 'easeOutBack',
+
+    });
+    setTimeout(function() {
+        document.getElementById("lockmenucon").style.display = "none";
+    }, 500);
+
+}
+
 function EnterCode() {
     document.getElementById("lockmenuconentercode").style.display = "inline";
     anime({
