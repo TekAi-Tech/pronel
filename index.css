@@ -532,3 +532,85 @@ a {
 .inputentercode:focus {
     outline: none;
 }
+
+.calcbody {
+    background: linear-gradient(to left, #022733, teal);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: goldmanbold;
+    font-weight: normal;
+    z-index: 1500;
+    opacity: 0;
+    display: none;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 73px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid>button:focus {
+    background-color: rgba(255, 255, 255, .9);
+    outline: none;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.calcmenubtn {
+    position: absolute;
+    height: 70px;
+    width: 100px;
+    color: gold;
+    font-size: 3.5vw;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    bottom: 45%;
+    font-family: Anuratiout;
+    z-index: 1500;
+}
+
+.calcmenubtn:focus {
+    outline: none;
+}

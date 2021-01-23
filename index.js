@@ -1,4 +1,5 @@
 function showmenu() {
+    console.log('hja');
     document.getElementById('mainmenu').style.display = "inline";
     document.getElementById('hmrest').style.display = "inline";
     anime({
@@ -20,6 +21,76 @@ function hidemenu() {
         document.getElementById("mainmenu").style.display = "none";
         document.getElementById("hmrest").style.display = "none";
     }, 500);
+}
+
+function GoHome() {
+    document.getElementById("mainmenu").style.display = "inline";
+    document.getElementById("hmrest").style.display = "inline";
+    document.getElementById("firstrowden").style.display = "inline";
+    document.getElementById("rowcas").style.display = "inline";
+    document.getElementById("bottomline").style.display = "inline";
+    document.getElementById("siderow").style.display = "inline";
+    anime({
+        targets: '.spotifycon',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    anime({
+        targets: '.calcbody',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    setTimeout(function() {
+        document.getElementById("spotifyui").style.display = "none";
+        document.getElementById("calcbody").style.display = "none";
+    }, 1500);
+    anime({
+        targets: '.slideinmenu',
+        left: '100%',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.rowday',
+        translateY: 150,
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    anime({
+        targets: '.secondrowcas',
+        translateY: 150,
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    anime({
+        targets: '.container-rss',
+        right: '50%',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    /* anime({
+         targets: '.inforow',
+         translateY: -300,
+         easing: 'easeOutBack',
+         duration: 2000,
+
+     });
+     anime({
+         targets: '.siderow',
+         translateX: 400,
+         easing: 'easeOutBack',
+         duration: 2000,
+     });*/
+
+
 }
 
 function SpotifyUI() {
@@ -84,9 +155,7 @@ function SpotifyUI() {
     }, 1500);
 }
 
-function Calculator() {
-    document.getElementById("calcnmbrs").style.display = "inline";
-    document.getElementById("calcbtns").style.display = "inline";
+function showcalc() {
     anime({
         targets: '.slideinmenu',
         left: '100%',
@@ -129,21 +198,15 @@ function Calculator() {
         duration: 2000,
 
     });
+
+    document.getElementById("calcbody").style.display = "inline";
     anime({
-        targets: '.calcnmbrs',
-        bottom: '80%',
+        targets: '.calcbody',
+        opacity: '1',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 3000,
 
     });
-    anime({
-        targets: '.calcbtns',
-        top: '20%',
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-
     setTimeout(function() {
         document.getElementById("mainmenu").style.display = "none";
         document.getElementById("hmrest").style.display = "none";
@@ -153,6 +216,8 @@ function Calculator() {
         document.getElementById("siderow").style.display = "none";
     }, 1500);
 }
+
+
 
 function HomePronel() {
     anime({
