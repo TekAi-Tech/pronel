@@ -30,9 +30,101 @@ function GoHome() {
     document.getElementById("rowcas").style.display = "inline";
     document.getElementById("bottomline").style.display = "inline";
     document.getElementById("siderow").style.display = "inline";
+    document.getElementById("spotifyui").style.display = "none";
+    document.getElementById("calcbody").style.display = "none";
+    anime({
+        targets: '.slideinmenu',
+        left: '100%',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.rowday',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    anime({
+        targets: '.secondrowcas',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 3000,
+
+    });
+    anime({
+        targets: '.container-rss',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.inforow',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.siderow',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 2000,
+    });
+
+
+}
+
+function SpotifyUI() {
+    document.getElementById("spotifyui").style.display = "inline";
+
+    anime({
+        targets: '.slideinmenu',
+        left: '100%',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.rowday',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.secondrowcas',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.container-rss',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.inforow',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
+    anime({
+        targets: '.siderow',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 2000,
+
+    });
     anime({
         targets: '.spotifycon',
-        opacity: '0',
+        opacity: '1',
         easing: 'easeOutBack',
         duration: 3000,
 
@@ -45,107 +137,7 @@ function GoHome() {
 
     });
     setTimeout(function() {
-        document.getElementById("spotifyui").style.display = "none";
         document.getElementById("calcbody").style.display = "none";
-    }, 1500);
-    anime({
-        targets: '.slideinmenu',
-        left: '100%',
-        easing: 'easeOutBack',
-        duration: 1000,
-
-    });
-    anime({
-        targets: '.rowday',
-        translateY: 150,
-        easing: 'easeOutBack',
-        duration: 3000,
-
-    });
-    anime({
-        targets: '.secondrowcas',
-        translateY: 150,
-        easing: 'easeOutBack',
-        duration: 3000,
-
-    });
-    anime({
-        targets: '.container-rss',
-        right: '50%',
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    /* anime({
-         targets: '.inforow',
-         translateY: -300,
-         easing: 'easeOutBack',
-         duration: 2000,
-
-     });
-     anime({
-         targets: '.siderow',
-         translateX: 400,
-         easing: 'easeOutBack',
-         duration: 2000,
-     });*/
-
-
-}
-
-function SpotifyUI() {
-    document.getElementById("spotifyui").style.visibility = "visible";
-
-    anime({
-        targets: '.slideinmenu',
-        left: '100%',
-        easing: 'easeOutBack',
-        duration: 1000,
-
-    });
-    anime({
-        targets: '.rowday',
-        translateY: -150,
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    anime({
-        targets: '.secondrowcas',
-        translateY: -150,
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    anime({
-        targets: '.container-rss',
-        left: '100%',
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    anime({
-        targets: '.inforow',
-        translateY: 300,
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    anime({
-        targets: '.siderow',
-        translateX: -400,
-        easing: 'easeOutBack',
-        duration: 2000,
-
-    });
-    anime({
-        targets: '.spotifycon',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 3000,
-
-    });
-    setTimeout(function() {
         document.getElementById("mainmenu").style.display = "none";
         document.getElementById("hmrest").style.display = "none";
         document.getElementById("firstrowden").style.display = "none";
@@ -165,37 +157,44 @@ function showcalc() {
     });
     anime({
         targets: '.rowday',
-        translateY: -150,
+        opacity: '0',
         easing: 'easeOutBack',
         duration: 2000,
 
     });
     anime({
         targets: '.secondrowcas',
-        translateY: -150,
+        opacity: '0',
         easing: 'easeOutBack',
         duration: 2000,
 
     });
     anime({
         targets: '.container-rss',
-        left: '100%',
+        opacity: '0',
         easing: 'easeOutBack',
         duration: 2000,
 
     });
     anime({
         targets: '.inforow',
-        translateY: 300,
+        opacity: '0',
         easing: 'easeOutBack',
         duration: 2000,
 
     });
     anime({
         targets: '.siderow',
-        translateX: -400,
+        opacity: '0',
         easing: 'easeOutBack',
         duration: 2000,
+
+    });
+    anime({
+        targets: '.spotifycon',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 3000,
 
     });
 
@@ -214,6 +213,7 @@ function showcalc() {
         document.getElementById("rowcas").style.display = "none";
         document.getElementById("bottomline").style.display = "none";
         document.getElementById("siderow").style.display = "none";
+        document.getElementById("spotifyui").style.display = "none";
     }, 1500);
 }
 
