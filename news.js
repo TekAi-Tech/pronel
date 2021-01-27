@@ -5,12 +5,12 @@ let parser = new Parser();
 
     let feed = await parser.parseURL('http://rss.cnn.com/rss/edition.rss');
     let haha = 0;
-    console.log(feed.title);
+
 
     feed.items.forEach(item => {
         if (haha <= 5) {
             document.getElementById('rss').innerHTML += '<li id="rssfeed">' + item.title + '</li>'
-            console.log(item.link);
+
             haha = haha + 1;
         }
     });
@@ -26,12 +26,11 @@ function rssreload() {
 
         let feed = await parser.parseURL('http://rss.cnn.com/rss/edition.rss');
         let haha = 0;
-        console.log(feed.title);
 
         feed.items.forEach(item => {
             if (haha <= 4) {
                 document.getElementById('rss').innerHTML += '<li id="rssfeed">' + item.title + '</li>'
-                console.log(item.link);
+
                 haha = haha + 1;
             }
         });

@@ -27,6 +27,12 @@
     }
 }
 
+:root {
+    --main-bg-color: #022733;
+    --second-bg-color: teal;
+    --default-white: white;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -36,11 +42,11 @@
 }
 
 .clock {
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .date {
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .cas {
@@ -56,7 +62,7 @@
     top: 5px;
     position: relative;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     font-family: Anuratireg;
     text-align: center;
     justify-content: center;
@@ -66,7 +72,7 @@
     width: 75%;
     position: relative;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     text-align: center;
     justify-content: center;
     font-family: Anuratireg;
@@ -79,9 +85,9 @@
     cursor: pointer;
     outline: none;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     font-family: Anuratireg;
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .btnmenu::after,
@@ -132,9 +138,9 @@
     cursor: pointer;
     outline: none;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     font-family: Anuratireg;
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .btnmenusec::after,
@@ -180,7 +186,7 @@
 
 .zindex99 {
     z-index: 99;
-    color: white;
+    color: var(--default-white);
     justify-content: center;
     font-size: 5vw;
 }
@@ -197,7 +203,7 @@
     z-index: 2000;
     width: 50%;
     height: 100%;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     display: none;
 }
 
@@ -225,8 +231,8 @@
     position: absolute;
     right: 0;
     top: 10%;
-    background-color: #022733;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
     font-family: goldmanreg;
     height: 75%;
     width: 66.7%;
@@ -241,7 +247,7 @@
     opacity: 0;
     position: absolute;
     background-color: green;
-    color: white;
+    color: var(--default-white);
     display: none;
     z-index: 111;
 }
@@ -276,7 +282,7 @@
     width: 75%;
     position: relative;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     text-align: center;
     justify-content: center;
     font-family: Anuratireg;
@@ -289,9 +295,9 @@
     cursor: pointer;
     outline: none;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     font-family: Anuratireg;
-    background-color: teal;
+    background-color: var(--second-bg-color);
 }
 
 .btnmenu3,
@@ -301,9 +307,9 @@
     cursor: pointer;
     outline: none;
     font-size: 5vw;
-    color: white;
+    color: var(--default-white);
     font-family: Anuratireg;
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .btnmenu3::after,
@@ -355,7 +361,7 @@
 }
 
 a {
-    color: white;
+    color: var(--default-white);
     background-color: black;
 }
 
@@ -366,14 +372,14 @@ a {
 }
 
 .inforow {
-    color: white;
+    color: var(--default-white);
     left: 0;
     height: 25%;
     width: 104%;
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: #022733;
+    background-color: var(--main-bg-color);
     justify-content: center;
     text-align: center;
 }
@@ -387,7 +393,7 @@ a {
 }
 
 .lock {
-    background-color: #022733;
+    background-color: var(--main-bg-color);
 }
 
 .lockbtn {
@@ -397,7 +403,7 @@ a {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: teal;
+    color: var(--second-bg-color);
 }
 
 .lockbtn:focus {
@@ -412,7 +418,7 @@ a {
     width: 70%;
     height: 80%;
     border-radius: 15px;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     z-index: 1001;
     display: none;
 }
@@ -429,44 +435,44 @@ a {
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: teal;
-    color: white;
-    box-shadow: inset 0 0 0 0 #022733;
+    background-color: var(--second-bg-color);
+    color: var(--default-white);
+    box-shadow: inset 0 0 0 0 var(--main-bg-color);
     transition: ease-out 0.3s;
 }
 
 .btninvisible:focus {
     outline: none;
-    box-shadow: inset 350 0 0 0 #022733;
+    box-shadow: inset 350 0 0 0 var(--main-bg-color);
     color: black;
 }
 
 .mainmenubtn {
     justify-content: center;
     text-align: center;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     border: none;
     font-family: goldmanbold;
     font-size: 4vw;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     transition: ease-out 0.3s;
     outline: none;
 }
 
 .mainmenubtn:focus {
-    background-color: #022733;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
     outline: none;
 }
 
 .lockmenubtnthree,
 .lockmenubtntwo,
 .lockmenubtnone {
-    background-color: teal;
+    background-color: var(--second-bg-color);
     border: none;
     font-family: goldmanbold;
     font-size: 4vw;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     transition: ease-out 0.3s;
     outline: none;
 }
@@ -474,8 +480,8 @@ a {
 .lockmenubtnthree:focus,
 .lockmenubtntwo:focus,
 .lockmenubtnone:focus {
-    background-color: #022733;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
     outline: none;
 }
 
@@ -485,7 +491,7 @@ a {
     top: 28%;
     width: 33.3%;
     height: 50%;
-    background-color: #022733;
+    background-color: var(--main-bg-color);
     z-index: 1000;
 }
 
@@ -497,7 +503,7 @@ a {
     width: 70%;
     height: 80%;
     border-radius: 15px;
-    background-color: teal;
+    background-color: var(--second-bg-color);
     z-index: 1001;
     display: none;
 }
@@ -506,7 +512,7 @@ a {
     justify-content: center;
     text-align: center;
     font-family: Anuratireg;
-    color: white;
+    color: var(--default-white);
     left: 10px;
     position: absolute;
     width: 100%;
@@ -534,7 +540,7 @@ a {
 }
 
 .calcbody {
-    background: linear-gradient(to left, #022733, teal);
+    background: linear-gradient(to left, var(--main-bg-color), var(--second-bg-color));
     bottom: 0;
     left: 0;
     right: 0;
@@ -593,12 +599,12 @@ a {
 }
 
 .output .current-operand {
-    color: white;
+    color: var(--default-white);
     font-size: 2.5rem;
 }
 
 .calcmenubtn {
-    position: absolute;
+    position: fixed;
     height: 70px;
     width: 100px;
     color: gold;
