@@ -1,9 +1,13 @@
-const fs = require('fs')
+var fs = require("fs");
 
-fs.rename('config.json', 'after.json', err => {
-    if (err) {
-        return console.error(err)
+
+fs.readFile('config.json', (err, data) => {
+    if (err) throw err;
+    let config = JSON.parse(data);
+    if (config.theme == 'custom') {
+        console.log('si kreten debile')
     }
+    console.log("Theme: " + config.theme);
+});
 
-    //done
-})
+console.log('FS done!')

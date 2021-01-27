@@ -1,3 +1,5 @@
+var lockcount = 0;
+
 function showmenu() {
     console.log('hja');
     document.getElementById('mainmenu').style.display = "inline";
@@ -43,35 +45,35 @@ function GoHome() {
         targets: '.rowday',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
     anime({
         targets: '.secondrowcas',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
     anime({
         targets: '.container-rss',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.inforow',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.siderow',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
     });
 
 
@@ -91,49 +93,49 @@ function SpotifyUI() {
         targets: '.rowday',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.secondrowcas',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.container-rss',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.inforow',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.siderow',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.spotifycon',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
     anime({
         targets: '.calcbody',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
     setTimeout(function() {
@@ -159,42 +161,42 @@ function showcalc() {
         targets: '.rowday',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.secondrowcas',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.container-rss',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.inforow',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.siderow',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 2000,
+        duration: 1000,
 
     });
     anime({
         targets: '.spotifycon',
         opacity: '0',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
 
@@ -203,7 +205,7 @@ function showcalc() {
         targets: '.calcbody',
         opacity: '1',
         easing: 'easeOutBack',
-        duration: 3000,
+        duration: 1000,
 
     });
     setTimeout(function() {
@@ -300,59 +302,75 @@ function showmenusec() {
 }
 
 function ShowLockMenu() {
-    document.getElementById("lockmenucon").style.display = "inline";
-    anime({
-        targets: '.container-lockmenu',
-        bottom: '10%',
-        easing: 'easeOutBack',
+    lockcount = lockcount + 1;
+    console.log(lockcount);
+    if (lockcount = 1) {
+        document.getElementById("lockmenucon").style.display = "inline";
+        anime({
+            targets: '.container-lockmenu',
+            bottom: '10%',
+            easing: 'easeOutBack',
 
-    });
+        });
+        if (lockcount = 2) {
+            anime({
+                targets: '.container-lockmenu',
+                bottom: '100%',
+                easing: 'easeOutBack',
 
-}
+            });
+            setTimeout(function() {
+                document.getElementById("lockmenucon").style.display = "none";
+            }, 500);
+            lockcount = 0;
+        }
 
-function HideLockMenu() {
+    }
 
-    anime({
-        targets: '.container-lockmenu',
-        bottom: '100%',
-        easing: 'easeOutBack',
 
-    });
-    setTimeout(function() {
-        document.getElementById("lockmenucon").style.display = "none";
-    }, 500);
+    function HideLockMenu() {
 
-}
+        anime({
+            targets: '.container-lockmenu',
+            bottom: '100%',
+            easing: 'easeOutBack',
 
-function HideLockMenucode() {
+        });
+        setTimeout(function() {
+            document.getElementById("lockmenucon").style.display = "none";
+        }, 500);
 
-    anime({
-        targets: '.container-lockmenuentercode',
-        bottom: '100%',
-        easing: 'easeOutBack',
+    }
 
-    });
-    setTimeout(function() {
-        document.getElementById("lockmenucon").style.display = "none";
-    }, 500);
+    function HideLockMenucode() {
 
-}
+        anime({
+            targets: '.container-lockmenuentercode',
+            bottom: '100%',
+            easing: 'easeOutBack',
 
-function EnterCode() {
-    document.getElementById("lockmenuconentercode").style.display = "inline";
-    anime({
-        targets: '.container-lockmenu',
-        bottom: '100%',
-        easing: 'easeOutBack',
+        });
+        setTimeout(function() {
+            document.getElementById("lockmenucon").style.display = "none";
+        }, 500);
 
-    });
-    anime({
-        targets: '.container-lockmenuentercode',
-        bottom: '10%',
-        easing: 'easeOutBack',
+    }
 
-    });
-    setTimeout(function() {
-        document.getElementById("lockmenucon").style.display = "none";
-    }, 1500);
-}
+    function EnterCode() {
+        document.getElementById("lockmenuconentercode").style.display = "inline";
+        anime({
+            targets: '.container-lockmenu',
+            bottom: '100%',
+            easing: 'easeOutBack',
+
+        });
+        anime({
+            targets: '.container-lockmenuentercode',
+            bottom: '10%',
+            easing: 'easeOutBack',
+
+        });
+        setTimeout(function() {
+            document.getElementById("lockmenucon").style.display = "none";
+        }, 1500);
+    }
