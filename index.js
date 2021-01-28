@@ -442,27 +442,27 @@ function ShowLockMenu() {
             targets: '.setaccount',
             opacity:'0',
             easing: 'easeOutBack',
-            duration: 1000
+            duration: 100
 
         }); 
         anime({
             targets: '.setsecurity',
             opacity:'0',
             easing: 'easeOutBack',
-            duration: 1000
+            duration: 100
 
         }); 
         anime({
             targets: '.setthemes',
             opacity:'1',
             easing: 'easeOutBack',
-            duration: 1000
+            duration: 100
 
         }); 
         setTimeout(function() {
             document.getElementById("setaccount").style.display = "none";
             document.getElementById("setsecurity").style.display = "none";
-        }, 1500);
+        }, 150);
     }
     function setsecurity() {
         document.getElementById("setsecurity").style.display = "inline";
@@ -470,27 +470,26 @@ function ShowLockMenu() {
             targets: '.setaccount',
             opacity:'0',
             easing: 'easeOutBack',
-            duration: 1000
+            duration: 100
 
         }); 
         anime({
             targets: '.setsecurity',
             opacity:'1',
             easing: 'easeOutBack',
-            duration: 1000
+            duration: 100
 
         }); 
         anime({
             targets: '.setthemes',
             opacity:'0',
             easing: 'easeOutBack',
-            duration: 1000
-
+            duration: 100
         }); 
         setTimeout(function() {
             document.getElementById("setaccount").style.display = "none";
             document.getElementById("setthemes").style.display = "none";
-        }, 1500);
+        }, 150);
     }
     function setaccount() {
         document.getElementById("setaccount").style.display = "inline";
