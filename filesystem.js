@@ -7,6 +7,9 @@ fs.readFile('config.json', (err, data) => {
     if (config.theme == 'custom') {
         console.log('si kreten debile')
     }
+    if (config.first_time == '0') {
+        console.log('aggggr')
+    }
     console.log("Theme: " + config.theme);
 });
 
