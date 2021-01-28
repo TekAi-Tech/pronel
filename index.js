@@ -1,5 +1,3 @@
-var lockcount = 0;
-
 function showmenu() {
     console.log('hja');
     document.getElementById('mainmenu').style.display = "inline";
@@ -147,6 +145,84 @@ function SpotifyUI() {
         document.getElementById("bottomline").style.display = "none";
         document.getElementById("siderow").style.display = "none";
     }, 1500);
+}
+function showset() {
+    anime({
+        targets: '.slideinmenu',
+        left: '100%',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.rowday',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.secondrowcas',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.container-rss',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.inforow',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.siderow',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    anime({
+        targets: '.spotifycon',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+
+    
+    anime({
+        targets: '.calcbody',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    document.getElementById("settings").style.display = "inline";
+    anime({
+        targets: '.settings',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
+    setTimeout(function() {
+        document.getElementById("calcbody").style.display = "none";
+        document.getElementById("mainmenu").style.display = "none";
+        document.getElementById("hmrest").style.display = "none";
+        document.getElementById("firstrowden").style.display = "none";
+        document.getElementById("rowcas").style.display = "none";
+        document.getElementById("bottomline").style.display = "none";
+        document.getElementById("siderow").style.display = "none";
+        document.getElementById("spotifyui").style.display = "none";
+    }, 1500); 
 }
 
 function showcalc() {
@@ -302,9 +378,7 @@ function showmenusec() {
 }
 
 function ShowLockMenu() {
-    lockcount = lockcount + 1;
-    console.log(lockcount);
-    if (lockcount = 1) {
+   
         document.getElementById("lockmenucon").style.display = "inline";
         anime({
             targets: '.container-lockmenu',
@@ -312,18 +386,6 @@ function ShowLockMenu() {
             easing: 'easeOutBack',
 
         });
-        if (lockcount = 2) {
-            anime({
-                targets: '.container-lockmenu',
-                bottom: '100%',
-                easing: 'easeOutBack',
-
-            });
-            setTimeout(function() {
-                document.getElementById("lockmenucon").style.display = "none";
-            }, 500);
-            lockcount = 0;
-        }
 
     }
 
@@ -373,4 +435,88 @@ function ShowLockMenu() {
         setTimeout(function() {
             document.getElementById("lockmenucon").style.display = "none";
         }, 1500);
+    }
+    function setthemes() {
+        document.getElementById("setthemes").style.display = "inline";
+        anime({
+            targets: '.setaccount',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        anime({
+            targets: '.setsecurity',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        anime({
+            targets: '.setthemes',
+            opacity:'1',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        setTimeout(function() {
+            document.getElementById("setaccount").style.display = "none";
+            document.getElementById("setsecurity").style.display = "none";
+        }, 1500);
+    }
+    function setsecurity() {
+        document.getElementById("setsecurity").style.display = "inline";
+        anime({
+            targets: '.setaccount',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        anime({
+            targets: '.setsecurity',
+            opacity:'1',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        anime({
+            targets: '.setthemes',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 1000
+
+        }); 
+        setTimeout(function() {
+            document.getElementById("setaccount").style.display = "none";
+            document.getElementById("setthemes").style.display = "none";
+        }, 1500);
+    }
+    function setaccount() {
+        document.getElementById("setaccount").style.display = "inline";
+        anime({
+            targets: '.setaccount',
+            opacity:'1',
+            easing: 'easeOutBack',
+            duration: 100
+
+        }); 
+        anime({
+            targets: '.setsecurity',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 100
+
+        }); 
+        anime({
+            targets: '.setthemes',
+            opacity:'0',
+            easing: 'easeOutBack',
+            duration: 100
+
+        }); 
+        setTimeout(function() {
+            document.getElementById("setthemes").style.display = "none";
+            document.getElementById("setsecurity").style.display = "none";
+        }, 150);
     }

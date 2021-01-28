@@ -31,6 +31,7 @@
     --main-bg-color: #022733;
     --second-bg-color: teal;
     --default-white: white;
+    --default-black: black;
 }
 
 ::-webkit-scrollbar {
@@ -211,7 +212,7 @@
     justify-content: center;
     text-align: center;
     font-family: Anuratireg;
-    color: black;
+    color: var(--default-black);
     font-size: 5vw;
 }
 
@@ -362,7 +363,7 @@
 
 a {
     color: var(--default-white);
-    background-color: black;
+    background-color: var(--default-black);
 }
 
 .HomePronel {
@@ -444,7 +445,7 @@ a {
 .btninvisible:focus {
     outline: none;
     box-shadow: inset 350 0 0 0 var(--main-bg-color);
-    color: black;
+    color: var(--default-black);
 }
 
 .mainmenubtn {
@@ -530,7 +531,7 @@ a {
     width: 70%;
     height: 80px;
     top: 35%;
-    border: solid black;
+    border: solid var(--default-black);
     font-family: goldmanbold;
     font-size: 5vw;
 }
@@ -619,4 +620,49 @@ a {
 
 .calcmenubtn:focus {
     outline: none;
+}
+.settings {
+    display: none;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.setchose{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    color: var(--default-black);
+}
+.setset{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--default-white)
+}
+.setaccount{
+    position: absolute;
+    display: inline;
+
+}
+.setthemes{
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.setsecurity{
+    position: absolute;
+    display: none;
+    opacity: 0;
 }
