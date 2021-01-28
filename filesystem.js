@@ -1,5 +1,5 @@
 var fs = require("fs");
-
+document.documentElement.style.cssText = "--main-bg-color: #022733;";
 
 fs.readFile('config.json', (err, data) => {
     if (err) throw err;

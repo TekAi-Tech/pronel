@@ -32,6 +32,7 @@ function GoHome() {
     document.getElementById("siderow").style.display = "inline";
     document.getElementById("spotifyui").style.display = "none";
     document.getElementById("calcbody").style.display = "none";
+    document.getElementById("settings").style.display = "none";
     anime({
         targets: '.slideinmenu',
         left: '100%',
@@ -147,6 +148,14 @@ function SpotifyUI() {
     }, 1500);
 }
 function showset() {
+    document.getElementById("settings").style.display = "inline";
+    anime({
+        targets: '.settings',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 1000,
+
+    });
     anime({
         targets: '.slideinmenu',
         left: '100%',
@@ -205,14 +214,7 @@ function showset() {
         duration: 1000,
 
     });
-    document.getElementById("settings").style.display = "inline";
-    anime({
-        targets: '.settings',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 1000,
 
-    });
     setTimeout(function() {
         document.getElementById("calcbody").style.display = "none";
         document.getElementById("mainmenu").style.display = "none";
@@ -222,7 +224,7 @@ function showset() {
         document.getElementById("bottomline").style.display = "none";
         document.getElementById("siderow").style.display = "none";
         document.getElementById("spotifyui").style.display = "none";
-    }, 1500); 
+    }, 1000); 
 }
 
 function showcalc() {
@@ -518,4 +520,7 @@ function ShowLockMenu() {
             document.getElementById("setthemes").style.display = "none";
             document.getElementById("setsecurity").style.display = "none";
         }, 150);
+    }
+    function arrivederci() {
+        window.location.href = 'arrivederci.html';
     }

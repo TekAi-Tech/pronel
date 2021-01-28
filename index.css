@@ -141,7 +141,7 @@
     font-size: 5vw;
     color: var(--default-white);
     font-family: Anuratireg;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
 }
 
 .btnmenusec::after,
@@ -665,4 +665,9 @@ a {
     position: absolute;
     display: none;
     opacity: 0;
+}
+.allcenter{
+    position: absolute;
+    left: 45%;
+
 }
