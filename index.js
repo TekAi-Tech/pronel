@@ -1,3 +1,10 @@
+const fs = require('fs')
+
+let rawconfig = fs.readFileSync('config.json')
+let config = JSON.parse(rawconfig)
+
+console.log(config)
+
 function showmenu() {
     console.log('hja');
     document.getElementById('mainmenu').style.display = "inline";

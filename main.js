@@ -1,10 +1,5 @@
 const { BrowserWindow, app } = require('electron')
 const url = require('url')
-const fs = require('fs')
-
-let rawconfig = fs.readFileSync("./assets/config.json")
-let config = JSON.parse(rawconfig)
-
 
 let win = null
 
@@ -21,7 +16,5 @@ function boot() {
     })
     win.loadURL(`file://${__dirname}/index.html`)
 }
-
-console.log(config.sn)
 
 app.on('ready', boot)
