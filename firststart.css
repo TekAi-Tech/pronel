@@ -23,7 +23,31 @@ body {
 .qrcode {
     top: 60px;
     margin: auto;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     padding: 10px;
+}
+
+.subtitleone {
+    bottom: 60px;
+    margin: auto;
+    width: 90%;
+    height: 3%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.3vw;
+    color: black;
+    font-family: goldmanbold;
+}
+
+.subtitletwo {
+    bottom: 50px;
+    margin: auto;
+    width: 90%;
+    height: 3%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.3vw;
+    color: black;
+    font-family: goldmanbold;
 }
