@@ -2,7 +2,16 @@
     "sn": 0,
     "fwversion": 0.1,
     "hwversion": 0.1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "paired": true,
+    "firstime": true,
+=======
     "paired": false,
+>>>>>>> 4a53efa3e413cdf82c49b1ce736221660f1fd1b7
+=======
+    "paired": false,
+>>>>>>> 4a53efa3e413cdf82c49b1ce736221660f1fd1b7
     "pinhw_layout": "",
     "body_layout": "",
     "theme_ondevice": ""
