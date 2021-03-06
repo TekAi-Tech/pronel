@@ -1,5 +1,9 @@
 const { BrowserWindow, app } = require('electron')
 const url = require('url')
+const fs = require('fs')
+
+let rawconfig = fs.readFileSync('config.json')
+let config = JSON.parse(rawconfig)
 
 let win = null
 
@@ -14,7 +18,11 @@ function boot() {
             nodeIntegration: true
         }
     })
-    win.loadURL(`file://${__dirname}/index.html`)
+    if (config.paired == false) {
+        win.loadURL(`file://${__dirname}/connect.html`)
+    } else {
+        win.loadURL(`file://${__dirname}/index.html`)
+    }
 }
 
 app.on('ready', boot)
