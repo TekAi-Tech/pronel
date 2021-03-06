@@ -11,7 +11,7 @@ xhr.open("POST", 'https://api.tekai.tech/pronel/connect/serialregister?serial=' 
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send();
 
-QRCode.toCanvas(canvas, 'sample text', function (error) {
+QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, function (error) {
   if (error) console.error(error)
   console.log('success!');
 })
