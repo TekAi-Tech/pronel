@@ -147,6 +147,7 @@ function SpotifyUI() {
         document.getElementById("siderow").style.display = "none";
     }, 1500);
 }
+
 function showset() {
     document.getElementById("settings").style.display = "inline";
     anime({
@@ -206,7 +207,7 @@ function showset() {
 
     });
 
-    
+
     anime({
         targets: '.calcbody',
         opacity: '0',
@@ -224,7 +225,7 @@ function showset() {
         document.getElementById("bottomline").style.display = "none";
         document.getElementById("siderow").style.display = "none";
         document.getElementById("spotifyui").style.display = "none";
-    }, 1000); 
+    }, 1000);
 }
 
 function showcalc() {
@@ -380,147 +381,155 @@ function showmenusec() {
 }
 
 function ShowLockMenu() {
-   
-        document.getElementById("lockmenucon").style.display = "inline";
-        anime({
-            targets: '.container-lockmenu',
-            bottom: '10%',
-            easing: 'easeOutBack',
 
-        });
+    document.getElementById("lockmenucon").style.display = "inline";
+    anime({
+        targets: '.container-lockmenu',
+        bottom: '10%',
+        easing: 'easeOutBack',
 
-    }
+    });
+
+}
 
 
-    function HideLockMenu() {
+function HideLockMenu() {
 
-        anime({
-            targets: '.container-lockmenu',
-            bottom: '100%',
-            easing: 'easeOutBack',
+    anime({
+        targets: '.container-lockmenu',
+        bottom: '100%',
+        easing: 'easeOutBack',
 
-        });
-        setTimeout(function() {
-            document.getElementById("lockmenucon").style.display = "none";
-        }, 500);
+    });
+    setTimeout(function() {
+        document.getElementById("lockmenucon").style.display = "none";
+    }, 500);
 
-    }
+}
 
-    function HideLockMenucode() {
+function HideLockMenucode() {
 
-        anime({
-            targets: '.container-lockmenuentercode',
-            bottom: '100%',
-            easing: 'easeOutBack',
+    anime({
+        targets: '.container-lockmenuentercode',
+        bottom: '100%',
+        easing: 'easeOutBack',
 
-        });
-        setTimeout(function() {
-            document.getElementById("lockmenucon").style.display = "none";
-        }, 500);
+    });
+    setTimeout(function() {
+        document.getElementById("lockmenucon").style.display = "none";
+    }, 500);
 
-    }
+}
 
-    function EnterCode() {
-        document.getElementById("lockmenuconentercode").style.display = "inline";
-        anime({
-            targets: '.container-lockmenu',
-            bottom: '100%',
-            easing: 'easeOutBack',
+function EnterCode() {
+    document.getElementById("lockmenuconentercode").style.display = "inline";
+    anime({
+        targets: '.container-lockmenu',
+        bottom: '100%',
+        easing: 'easeOutBack',
 
-        });
-        anime({
-            targets: '.container-lockmenuentercode',
-            bottom: '10%',
-            easing: 'easeOutBack',
+    });
+    anime({
+        targets: '.container-lockmenuentercode',
+        bottom: '10%',
+        easing: 'easeOutBack',
 
-        });
-        setTimeout(function() {
-            document.getElementById("lockmenucon").style.display = "none";
-        }, 1500);
-    }
-    function setthemes() {
-        document.getElementById("setthemes").style.display = "inline";
-        anime({
-            targets: '.setaccount',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    setTimeout(function() {
+        document.getElementById("lockmenucon").style.display = "none";
+    }, 1500);
+}
 
-        }); 
-        anime({
-            targets: '.setsecurity',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
+function setthemes() {
+    document.getElementById("setthemes").style.display = "inline";
+    anime({
+        targets: '.setaccount',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
 
-        }); 
-        anime({
-            targets: '.setthemes',
-            opacity:'1',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    anime({
+        targets: '.setsecurity',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
 
-        }); 
-        setTimeout(function() {
-            document.getElementById("setaccount").style.display = "none";
-            document.getElementById("setsecurity").style.display = "none";
-        }, 150);
-    }
-    function setsecurity() {
-        document.getElementById("setsecurity").style.display = "inline";
-        anime({
-            targets: '.setaccount',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    anime({
+        targets: '.setthemes',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 100
 
-        }); 
-        anime({
-            targets: '.setsecurity',
-            opacity:'1',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    setTimeout(function() {
+        document.getElementById("setaccount").style.display = "none";
+        document.getElementById("setsecurity").style.display = "none";
+    }, 150);
+}
 
-        }); 
-        anime({
-            targets: '.setthemes',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
-        }); 
-        setTimeout(function() {
-            document.getElementById("setaccount").style.display = "none";
-            document.getElementById("setthemes").style.display = "none";
-        }, 150);
-    }
-    function setaccount() {
-        document.getElementById("setaccount").style.display = "inline";
-        anime({
-            targets: '.setaccount',
-            opacity:'1',
-            easing: 'easeOutBack',
-            duration: 100
+function setsecurity() {
+    document.getElementById("setsecurity").style.display = "inline";
+    anime({
+        targets: '.setaccount',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
 
-        }); 
-        anime({
-            targets: '.setsecurity',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    anime({
+        targets: '.setsecurity',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 100
 
-        }); 
-        anime({
-            targets: '.setthemes',
-            opacity:'0',
-            easing: 'easeOutBack',
-            duration: 100
+    });
+    anime({
+        targets: '.setthemes',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
+    });
+    setTimeout(function() {
+        document.getElementById("setaccount").style.display = "none";
+        document.getElementById("setthemes").style.display = "none";
+    }, 150);
+}
 
-        }); 
-        setTimeout(function() {
-            document.getElementById("setthemes").style.display = "none";
-            document.getElementById("setsecurity").style.display = "none";
-        }, 150);
-    }
-    function arrivederci() {
-        window.location.href = 'arrivederci.html';
-    }
+function setaccount() {
+    document.getElementById("setaccount").style.display = "inline";
+    anime({
+        targets: '.setaccount',
+        opacity: '1',
+        easing: 'easeOutBack',
+        duration: 100
+
+    });
+    anime({
+        targets: '.setsecurity',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
+
+    });
+    anime({
+        targets: '.setthemes',
+        opacity: '0',
+        easing: 'easeOutBack',
+        duration: 100
+
+    });
+    setTimeout(function() {
+        document.getElementById("setthemes").style.display = "none";
+        document.getElementById("setsecurity").style.display = "none";
+    }, 150);
+}
+
+function arrivederci() {
+    window.location.href = 'arrivederci.html';
+}
+
+function firststart() {
+    window.location.href = 'firststart.html';
+}
