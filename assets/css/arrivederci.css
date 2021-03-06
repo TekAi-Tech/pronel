@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Anuratireg;
+    src: url(fonts/AnuratiPro-Regular.otf);
+}
+
+:root {
+    --main-bg-color: #022733;
+    --second-bg-color: teal;
+    --default-white: white;
+    --default-black: black;
+}
+body{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    color: var(--default-white);
+    text-align: center;
+    justify-content: center;
+    font-family: Anuratireg;
+    font-size: 10vw;
+    opacity: 1;
+}

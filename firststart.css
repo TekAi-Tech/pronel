@@ -1,0 +1,21 @@
+@font-face {
+    font-family: goldmanbold;
+    src: url(fonts/Goldman-Bold.ttf);
+}
+
+body {
+    background-color: #022733;
+    background-image: linear-gradient(160deg, #022733 0%, #022733 20%, teal 100%);
+}
+
+.title {
+    top: 10px;
+    margin: auto;
+    width: 50%;
+    height: 20%;
+    padding: 10px;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    font-family: goldmanbold;
+}

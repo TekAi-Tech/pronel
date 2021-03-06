@@ -1,0 +1,673 @@
+@font-face {
+    font-family: Anuratireg;
+    src: url(fonts/AnuratiPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Anuratiout;
+    src: url(fonts/AnuratiPro-Outline.otf);
+}
+
+@font-face {
+    font-family: goldmanbold;
+    src: url(fonts/Goldman-Bold.ttf);
+}
+
+@font-face {
+    font-family: goldmanreg;
+    src: url(fonts/Goldman-Regular.ttf);
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(2, 39, 51, 1);
+    }
+    to {
+        background-color: rgba(2, 39, 51, 0);
+    }
+}
+
+:root {
+    --main-bg-color: #022733;
+    --second-bg-color: teal;
+    --default-white: white;
+    --default-black: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bckg {
+    background-color: blue;
+}
+
+.clock {
+    background-color: var(--main-bg-color);
+}
+
+.date {
+    background-color: var(--main-bg-color);
+}
+
+.cas {
+    height: 10%;
+}
+
+.den {
+    height: 10%;
+}
+
+#clock {
+    width: 75%;
+    top: 5px;
+    position: relative;
+    font-size: 5vw;
+    color: var(--default-white);
+    font-family: Anuratireg;
+    text-align: center;
+    justify-content: center;
+}
+
+#date {
+    width: 75%;
+    position: relative;
+    font-size: 5vw;
+    color: var(--default-white);
+    text-align: center;
+    justify-content: center;
+    font-family: Anuratireg;
+    z-index: 99;
+}
+
+.btnmenu {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: var(--default-white);
+    font-family: Anuratireg;
+    background-color: var(--main-bg-color);
+}
+
+.btnmenu::after,
+.btnmenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenu::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenu::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenu:focus::after,
+.btnmenu:focus::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenu:focus {
+    outline: none;
+}
+
+.btnmenusec {
+    position: relative;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: var(--default-white);
+    font-family: Anuratireg;
+    background-color: transparent;
+}
+
+.btnmenusec::after,
+.btnmenusec::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenusec::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenusec::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenusec:focus::after,
+.btnmenusec:focus::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenusec:focus {
+    outline: none;
+}
+
+.zindex99 {
+    z-index: 99;
+    color: var(--default-white);
+    justify-content: center;
+    font-size: 5vw;
+}
+
+.btns {
+    height: 10%;
+}
+
+.slideinmenu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    z-index: 2000;
+    width: 50%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    display: none;
+}
+
+.mainmenutitle {
+    justify-content: center;
+    text-align: center;
+    font-family: Anuratireg;
+    color: var(--default-black);
+    font-size: 5vw;
+}
+
+.transmenu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2000;
+    background-color: transparent;
+    display: none;
+}
+
+.container-rss {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
+    font-family: goldmanreg;
+    height: 75%;
+    width: 66.7%;
+}
+
+.spotifycon {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    background-color: green;
+    color: var(--default-white);
+    display: none;
+    z-index: 111;
+}
+
+.tomenubtn {
+    position: relative;
+    border: none;
+    outline: none;
+    left: 50%;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: goldenrod;
+    font-family: Anuratireg;
+    font-size: 15px;
+}
+
+.tomenubtn:focus {
+    outline: none;
+}
+
+.den2 {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    visibility: hidden;
+    opacity: 0.0;
+}
+
+#date2 {
+    width: 75%;
+    position: relative;
+    font-size: 5vw;
+    color: var(--default-white);
+    text-align: center;
+    justify-content: center;
+    font-family: Anuratireg;
+    z-index: 99;
+}
+
+.btnmenu3 {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: var(--default-white);
+    font-family: Anuratireg;
+    background-color: var(--second-bg-color);
+}
+
+.btnmenu3,
+.btnmenu2 {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+    color: var(--default-white);
+    font-family: Anuratireg;
+    background-color: var(--main-bg-color);
+}
+
+.btnmenu3::after,
+.btnmenu3::before,
+.btnmenu2::after,
+.btnmenu2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 3px;
+}
+
+.btnmenu3::after,
+.btnmenu2::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #1185AB;
+    border-right-color: #1185AB;
+}
+
+.btnmenu3::before,
+.btnmenu2::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #13A965;
+    border-left-color: #13A965;
+}
+
+.btnmenu3:hover::after,
+.btnmenu3:hover::before,
+.btnmenu2:hover::after,
+.btnmenu2:hover::before {
+    width: 100%;
+    height: 100%;
+    animation: fade 3s forwards;
+}
+
+.btnmenu3:focus,
+.btnmenu2:focus {
+    outline: none;
+}
+
+a {
+    color: var(--default-white);
+    background-color: var(--default-black);
+}
+
+.HomePronel {
+    position: unset;
+    width: calc(100%-50px);
+    height: 100%;
+}
+
+.inforow {
+    color: var(--default-white);
+    left: 0;
+    height: 25%;
+    width: 104%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-bg-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.rsstit {
+    top: 15%;
+}
+
+.rssreload {
+    top: 15%;
+}
+
+.lock {
+    background-color: var(--main-bg-color);
+}
+
+.lockbtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--second-bg-color);
+}
+
+.lockbtn:focus {
+    outline: none;
+}
+
+.container-lockmenu {
+    position: absolute;
+    bottom: 100%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: var(--second-bg-color);
+    z-index: 1001;
+    display: none;
+}
+
+.firstrowlock {
+    justify-content: center;
+    text-align: center;
+    top: 2%;
+    font-family: Anuratireg;
+    font-size: 5vw;
+}
+
+.btninvisible {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--second-bg-color);
+    color: var(--default-white);
+    box-shadow: inset 0 0 0 0 var(--main-bg-color);
+    transition: ease-out 0.3s;
+}
+
+.btninvisible:focus {
+    outline: none;
+    box-shadow: inset 350 0 0 0 var(--main-bg-color);
+    color: var(--default-black);
+}
+
+.mainmenubtn {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    border: none;
+    font-family: goldmanbold;
+    font-size: 4vw;
+    background-color: var(--second-bg-color);
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.mainmenubtn:focus {
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
+    outline: none;
+}
+
+.lockmenubtnthree,
+.lockmenubtntwo,
+.lockmenubtnone {
+    background-color: var(--second-bg-color);
+    border: none;
+    font-family: goldmanbold;
+    font-size: 4vw;
+    background-color: var(--second-bg-color);
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.lockmenubtnthree:focus,
+.lockmenubtntwo:focus,
+.lockmenubtnone:focus {
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
+    outline: none;
+}
+
+.siderow {
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 33.3%;
+    height: 50%;
+    background-color: var(--main-bg-color);
+    z-index: 1000;
+}
+
+.container-lockmenuentercode {
+    position: absolute;
+    bottom: 100%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: var(--second-bg-color);
+    z-index: 1001;
+    display: none;
+}
+
+.entercode {
+    justify-content: center;
+    text-align: center;
+    font-family: Anuratireg;
+    color: var(--default-white);
+    left: 10px;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 1%;
+    left: 0%;
+    right: 0%;
+}
+
+.inputentercode {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    left: 15%;
+    width: 70%;
+    height: 80px;
+    top: 35%;
+    border: solid var(--default-black);
+    font-family: goldmanbold;
+    font-size: 5vw;
+}
+
+.inputentercode:focus {
+    outline: none;
+}
+
+.calcbody {
+    background: linear-gradient(to left, var(--main-bg-color), var(--second-bg-color));
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: goldmanbold;
+    font-weight: normal;
+    z-index: 1500;
+    opacity: 0;
+    display: none;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 73px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid>button:focus {
+    background-color: rgba(255, 255, 255, .9);
+    outline: none;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: var(--default-white);
+    font-size: 2.5rem;
+}
+
+.calcmenubtn {
+    position: fixed;
+    height: 70px;
+    width: 100px;
+    color: gold;
+    font-size: 3.5vw;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    bottom: 45%;
+    font-family: Anuratiout;
+    z-index: 1500;
+}
+
+.calcmenubtn:focus {
+    outline: none;
+}
+.settings {
+    display: none;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.setchose{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    color: var(--default-black);
+}
+.setset{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--default-white)
+}
+.setaccount{
+    position: absolute;
+    display: inline;
+
+}
+.setthemes{
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.setsecurity{
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.allcenter{
+    position: absolute;
+    left: 45%;
+
+}
