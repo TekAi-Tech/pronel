@@ -19,3 +19,11 @@ body {
     color: white;
     font-family: goldmanbold;
 }
+
+.qrcode {
+    top: 60px;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+}
