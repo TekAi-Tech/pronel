@@ -3,7 +3,7 @@
     "fwversion": 0.1,
     "hwversion": 0.1,
     "paired": true,
-    "pinhw_layout" : "",
-    "body_layout" : "",
-    "theme_ondevice" : ""
+    "pinhw_layout": "",
+    "body_layout": "",
+    "theme_ondevice": ""
 }
