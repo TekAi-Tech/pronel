@@ -23,28 +23,29 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+var success = 0;
+
 async function check() {
   var data;
-  while (true) {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-      if (this.readyState != 4) return;
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.readyState != 4) return;
 
-      if (this.status == 200) {
-        data = JSON.parse(this.responseText);
-      }
-    };
-
-    xhr.open('GET', yourUrl, true);
-    xhr.send();
-
-    if (data == 0) {
-      sleep(500);
-    } else if (data == 1) {
-      break;
+    if (this.status == 200) {
+      data = JSON.parse(this.responseText);
     }
+  };
+
+  xhr.open('GET', 'https://api.tekai.tech/pronel/connect/checkconf?serial=' + serial, true);
+  xhr.send();
+
+  if (data == 0) {
+    sleep(10);
+  } else if (data == 1) {
+    success = 1;
+    clearInterval(inter);
   }
   console.log("ProNel paired successfully.")
 }
 
-check();
+var inter = setInterval(check(), 500);
