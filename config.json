@@ -1,15 +1,9 @@
 {
-    "theme": "tekai",
     "sn": "n/a",
-    "version": "V.1",
-    "type": "U",
-    "tunnel": "n/a",
-    "name": "n/a",
-    "email": "n/a",
-    "starmodules": "n/a",
-    "mainclr": "n/a",
-    "secondclr": "n/a",
-    "b/w_crrct": "n/a",
-    "hash_pin": "n/a",
-    "first_time": "0"
+    "fwversion": "V.1",
+    "hwversion": "V.1",
+    "first_time": "0",
+    "pinhw_layout" : "",
+    "body_layout" : "",
+    "theme_ondevice" : ""
 }
