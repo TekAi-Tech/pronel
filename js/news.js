@@ -8,7 +8,7 @@ let parser = new Parser();
 
 
     feed.items.forEach(item => {
-        if (haha <= 5) {
+        if (haha <= 8) {
             document.getElementById('rss').innerHTML += '<li id="rssfeed">' + item.title + '</li>'
 
             haha = haha + 1;
