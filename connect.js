@@ -8,11 +8,9 @@ let canvas = document.getElementById('canvasqr')
 
 if (config.firstime == true) {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", 'https://api.tekai.tech/pronel/connect/serialregister', true);
+  xhr.open("POST", 'https://api.tekai.tech/pronel/connect/serialregister?serial=' + serial, true);
   xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(JSON.stringify({
-    serial: serial
-  }));
+  xhr.send();
   config.firstime = false;
 }
 
