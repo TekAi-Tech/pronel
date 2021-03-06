@@ -21,6 +21,7 @@
     "git": "^0.1.5",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "qrcode": "^1.4.4",
     "rss-parser": "^3.10.0"
   },
   "repository": {
