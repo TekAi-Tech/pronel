@@ -15,9 +15,11 @@ try {
   console.log(error)
 }
 
-QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, function (error) {
-  if (error) console.error(error)
+QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function(error) {
+    if (error) console.error(error)
+    console.log('success!');
 })
+
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -49,3 +51,4 @@ async function check() {
 }
 
 var inter = setInterval(check(), 500);
+

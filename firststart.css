@@ -12,20 +12,21 @@ body {
     top: 10px;
     margin: auto;
     width: 50%;
-    height: 20%;
+    height: 15%;
     padding: 10px;
     text-align: center;
-    font-size: 5vw;
+    font-size: 6vw;
     color: white;
     font-family: goldmanbold;
 }
 
 .qrcode {
-    top: 60px;
     margin: auto;
     width: 50%;
     height: 50%;
     padding: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 .subtitleone {
