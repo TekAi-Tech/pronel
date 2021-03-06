@@ -529,7 +529,3 @@ function setaccount() {
 function arrivederci() {
     window.location.href = 'arrivederci.html';
 }
-
-function firststart() {
-    window.location.href = 'firststart.html';
-}
