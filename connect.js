@@ -15,11 +15,10 @@ try {
   console.log(error)
 }
 
-QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function(error) {
-    if (error) console.error(error)
-    console.log('success!');
+QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function (error) {
+  if (error) console.error(error)
+  console.log('success!');
 })
-
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -28,27 +27,27 @@ function sleep(ms) {
 var success = 0;
 
 async function check() {
-  var data;
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (this.readyState != 4) return;
+  if (success == 0) {
+    var data;
+    var xhr = await new XMLHttpRequest();
+    xhr.onreadystatechange = async function () {
+      if (this.readyState != 4) return;
 
-    if (this.status == 200) {
-      data = JSON.parse(this.responseText);
-    }
-  };
-
-  xhr.open('GET', 'https://api.tekai.tech/pronel/connect/checkconf?serial=' + serial, true);
-  xhr.send();
-
-  if (data == 0) {
-    sleep(10);
-  } else if (data == 1) {
-    success = 1;
-    clearInterval(inter);
+      if (this.status == 200) {
+        data = await JSON.parse(this.responseText);
+        if (data == "0") {
+          await sleep(700);
+          console.log("...")
+          check();
+        } else if (data == 1) {
+          success = 1;
+          console.log("ProNel paired successfully.")
+        }
+      }
+    };
+    await xhr.open('GET', 'https://api.tekai.tech/pronel/connect/checkconf/index.php?serial=' + serial, true);
+    await xhr.send();
   }
-  console.log("ProNel paired successfully.")
 }
 
-var inter = setInterval(check(), 500);
-
+check();
