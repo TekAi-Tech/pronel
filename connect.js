@@ -27,6 +27,7 @@ function sleep(ms) {
 var success = 0;
 
 async function check() {
+  console.log("...")
   if (success == 0) {
     var data;
     var xhr = await new XMLHttpRequest();
