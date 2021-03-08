@@ -27,7 +27,6 @@ function sleep(ms) {
 var success = 0;
 
 async function check() {
-  console.log("...")
   if (success == 0) {
     var data;
     var xhr = await new XMLHttpRequest();
@@ -43,6 +42,7 @@ async function check() {
         } else if (data == 1) {
           success = 1;
           console.log("ProNel paired successfully.")
+          window.location.href = 'initial.html';
         }
       }
     };
