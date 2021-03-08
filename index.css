@@ -621,6 +621,7 @@ a {
 .calcmenubtn:focus {
     outline: none;
 }
+
 .settings {
     display: none;
     background-color: var(--main-bg-color);
@@ -631,7 +632,8 @@ a {
     top: 0;
     right: 0;
 }
-.setchose{
+
+.setchose {
     position: absolute;
     left: 0;
     top: 0;
@@ -641,7 +643,8 @@ a {
     background-color: var(--second-bg-color);
     color: var(--default-black);
 }
-.setset{
+
+.setset {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -651,23 +654,25 @@ a {
     background-color: var(--main-bg-color);
     color: var(--default-white)
 }
-.setaccount{
+
+.setaccount {
     position: absolute;
     display: inline;
+}
 
-}
-.setthemes{
+.setthemes {
     position: absolute;
     display: none;
     opacity: 0;
 }
-.setsecurity{
+
+.setsecurity {
     position: absolute;
     display: none;
     opacity: 0;
 }
-.allcenter{
+
+.allcenter {
     position: absolute;
     left: 45%;
-
 }

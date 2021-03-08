@@ -2,7 +2,7 @@
     "sn": "XXXXXXXX",
     "fwversion": 0.1,
     "hwversion": 0.1,
-    "paired": false,
+    "paired": true,
     "pinhw_layout": "",
     "body_layout": "",
     "theme_ondevice": ""

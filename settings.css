@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Anuratireg;
+    src: url(fonts/AnuratiPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Anuratiout;
+    src: url(fonts/AnuratiPro-Outline.otf);
+}
+
+@font-face {
+    font-family: goldmanbold;
+    src: url(fonts/Goldman-Bold.ttf);
+}
+
+@font-face {
+    font-family: goldmanreg;
+    src: url(fonts/Goldman-Regular.ttf);
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(2, 39, 51, 1);
+    }
+    to {
+        background-color: rgba(2, 39, 51, 0);
+    }
+}
+
+:root {
+    --main-bg-color: #022733;
+    --second-bg-color: teal;
+    --default-white: white;
+    --default-black: black;
+}
+
+.settings {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.setchose {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    color: var(--default-black);
+}
+
+.setset {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--default-white)
+}
+
+.setaccount {
+    position: absolute;
+    display: inline;
+}
+
+.setthemes {
+    position: absolute;
+    display: none;
+}
+
+.setsecurity {
+    position: absolute;
+    display: none;
+}
+
+.setgen {
+    position: absolute;
+    display: none;
+}
+
+.mainmenubtn {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    border: none;
+    font-family: goldmanbold;
+    font-size: 4vw;
+    background-color: var(--second-bg-color);
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.mainmenubtn:focus {
+    background-color: var(--main-bg-color);
+    color: var(--default-white);
+    outline: none;
+}
+
+.allcenter {
+    position: absolute;
+    left: 45%;
+}

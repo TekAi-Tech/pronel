@@ -366,90 +366,42 @@ function EnterCode() {
 
 function setthemes() {
     document.getElementById("setthemes").style.display = "inline";
-    anime({
-        targets: '.setaccount',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    anime({
-        targets: '.setsecurity',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    anime({
-        targets: '.setthemes',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    setTimeout(function() {
-        document.getElementById("setaccount").style.display = "none";
-        document.getElementById("setsecurity").style.display = "none";
-    }, 150);
+    document.getElementById("setaccount").style.display = "none";
+    document.getElementById("setsecurity").style.display = "none";
+    document.getElementById("setgen").style.display = "none";
 }
 
 function setsecurity() {
     document.getElementById("setsecurity").style.display = "inline";
-    anime({
-        targets: '.setaccount',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    anime({
-        targets: '.setsecurity',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    anime({
-        targets: '.setthemes',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
-    });
-    setTimeout(function() {
-        document.getElementById("setaccount").style.display = "none";
-        document.getElementById("setthemes").style.display = "none";
-    }, 150);
+    document.getElementById("setaccount").style.display = "none";
+    document.getElementById("setthemes").style.display = "none";
+    document.getElementById("setgen").style.display = "none";
 }
 
 function setaccount() {
     document.getElementById("setaccount").style.display = "inline";
-    anime({
-        targets: '.setaccount',
-        opacity: '1',
-        easing: 'easeOutBack',
-        duration: 100
+    document.getElementById("setthemes").style.display = "none";
+    document.getElementById("setsecurity").style.display = "none";
+    document.getElementById("setgen").style.display = "none";
 
-    });
-    anime({
-        targets: '.setsecurity',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
+}
 
-    });
-    anime({
-        targets: '.setthemes',
-        opacity: '0',
-        easing: 'easeOutBack',
-        duration: 100
-
-    });
-    setTimeout(function() {
-        document.getElementById("setthemes").style.display = "none";
-        document.getElementById("setsecurity").style.display = "none";
-    }, 150);
+function setgen() {
+    document.getElementById("setgen").style.display = "inline";
+    document.getElementById("setthemes").style.display = "none";
+    document.getElementById("setsecurity").style.display = "none";
+    document.getElementById("setaccount").style.display = "none";
 }
 
 function arrivederci() {
     window.location.href = 'arrivederci.html';
+}
+
+function firststart() {
+    window.location.href = 'firststart.html';
+}
+
+function backhome() {
+    window.location.href = 'index.html';
+    console.log("funguje to pico")
 }

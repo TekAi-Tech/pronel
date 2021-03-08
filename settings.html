@@ -5,11 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="settings.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="index.js"></script>
+    <title>settings</title>
 </head>
 
 <body>
-    hahahahahahaha
+    <div class="settings" id="settings">
+        <div class="setchose">
+            <div onclick="backhome()" class="fa fa-times fa-2x allcenter" aria-hidden="true"></div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button onclick="setaccount()" class="mainmenubtn">ACCOUNT</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button onclick="setthemes()" class="mainmenubtn">THEMES</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button onclick="setsecurity()" class="mainmenubtn">SECURITY</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button onclick="setgen()" class="mainmenubtn">GENERAL</button>
+                </div>
+            </div>
+        </div>
+        <div class="setset">
+            <div id="setaccount" class="setaccount">
+                <h1>setaccount</h1>
+            </div>
+            <div id="setthemes" class="setthemes">
+                <h1>setthemes</h1>
+            </div>
+            <div id="setsecurity" class="setsecurity">
+                <h1>setsecurity</h1>
+            </div>
+            <div id="setgen" class="setgen">
+                <h1>general</h1>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

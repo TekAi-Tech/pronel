@@ -533,3 +533,8 @@ function arrivederci() {
 function firststart() {
     window.location.href = 'firststart.html';
 }
+
+function backhome() {
+    window.location.href = 'index.html';
+    console.log("funguje to pico")
+}
