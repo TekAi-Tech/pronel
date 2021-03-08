@@ -27,7 +27,6 @@ function sleep(ms) {
 var success = 0;
 
 async function check() {
-<<<<<<< HEAD
     var data;
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -51,30 +50,3 @@ async function check() {
 }
 
 var inter = setInterval(check(), 500);
-=======
-  if (success == 0) {
-    var data;
-    var xhr = await new XMLHttpRequest();
-    xhr.onreadystatechange = async function () {
-      if (this.readyState != 4) return;
-
-      if (this.status == 200) {
-        data = await JSON.parse(this.responseText);
-        if (data == "0") {
-          await sleep(700);
-          console.log("...")
-          check();
-        } else if (data == 1) {
-          success = 1;
-          console.log("ProNel paired successfully.")
-          window.location.href = 'initial.html';
-        }
-      }
-    };
-    await xhr.open('GET', 'https://api.tekai.tech/pronel/connect/checkconf/index.php?serial=' + serial, true);
-    await xhr.send();
-  }
-}
-
-check();
->>>>>>> 24053f4ce8cf7245e2cc50cd85a4d4b442827d28
