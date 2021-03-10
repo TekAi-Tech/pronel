@@ -15,7 +15,7 @@ try {
     console.log(error)
 }
 
-QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function(error) {
+QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function (error) {
     if (error) console.error(error)
     console.log('success!');
 })
@@ -30,7 +30,7 @@ async function check() {
     if (success == 0) {
         var data;
         var xhr = await new XMLHttpRequest();
-        xhr.onreadystatechange = async function() {
+        xhr.onreadystatechange = async function () {
             if (this.readyState != 4) return;
 
             if (this.status == 200) {
