@@ -15,7 +15,7 @@ try {
     console.log(error)
 }
 
-QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?serial=' + serial, { scale: 6 }, function (error) {
+QRCode.toCanvas(canvas, 'https://pronel.tekai.tech/setup?index=2#' + serial, { scale: 6 }, function (error) {
     if (error) console.error(error)
     console.log('success!');
 })
