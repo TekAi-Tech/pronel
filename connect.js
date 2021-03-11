@@ -29,7 +29,7 @@ var success = 0;
 async function check() {
     if (success == 0) {
         var data;
-        var xhr = await new XMLHttpRequest();
+        var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = async function () {
             if (this.readyState != 4) return;
 
