@@ -146,6 +146,7 @@ function SpotifyUI() {
         document.getElementById("bottomline").style.display = "none";
         document.getElementById("siderow").style.display = "none";
     }, 1500);
+    window.location.href = './spotify'
 }
 
 function showset() {
